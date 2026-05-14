@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Interactive e-commerce sales analytics dashboard with revenue, orders, AOV, customer activity, country ranking, and trend analysis."/>
 <title>E-Commerce Sales Analytics Dashboard</title>
 <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
 <style>
@@ -320,7 +321,7 @@ function updateDashboard() {
   }], {
     ...base,
     margin: {l: 110, r: 16, t: 10, b: 36},
-    xaxis: {...base.xaxis, title: "Revenue"}
+    xaxis: {...base.xaxis, title: "Revenue", type: "linear", tickformat: ",.2s", rangemode: "tozero"}
   }, CONFIG);
 }
 
